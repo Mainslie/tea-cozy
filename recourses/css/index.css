@@ -6,3 +6,28 @@
     opacity: 0.9;
     text-align: center;
 }
+
+.header {
+    position: fixed;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    
+}
+
+img {
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 50px;
+}
+
+.nav a {
+    float: right;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
