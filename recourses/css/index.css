@@ -9,9 +9,45 @@
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
 h2 {
     font-size: 32px;
 }
+
+span {
+    line-height: 60px;
+}
+
+body {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    overflow-y: auto;
+    flex-grow: 3;
+    flex-shrink: 1;
+  }
 
 /* Header */
 
@@ -39,24 +75,17 @@ h2 {
     text-decoration: none;
 }
 
+
 /* Main */
 
-.container {
+.container-one {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
+    position: relative;
 } 
-
-.item {
- border: 20px solid brown;
-}
-
-.main {
-  height: 700px;
-  position: relative;
-}
-
-/* Section One  */
+/* Mission  */
 
 .text-block {
     position: absolute;
@@ -66,7 +95,7 @@ h2 {
     text-align: center;
 }
 
-/* Section Two  */
+/* Featured  */
 
 .section-two {
     max-width: 1200px;
@@ -90,4 +119,47 @@ img.image {
   
 }
 
+/* Locations */
+.section-three {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/img-locations-background.jpeg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+}
+.locations {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background: none;
+    height: 500px;
+    width: 100%;
+}
 
+.location {
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+}
+
+.section-three h2 {
+    justify-content: center;
+    background: none;
+    gap: 15px;
+}
+
+/* Footer */
+
+
+.contact {
+    text-align: center;
+    height: 200px;
+}
+
+.copyright {
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 20px;  
+}
