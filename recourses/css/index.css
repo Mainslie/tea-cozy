@@ -1,3 +1,5 @@
+/* General */
+
 * {
     font-family: Helvetica;
     font-size: 22px;
@@ -5,4 +7,159 @@
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+span {
+    line-height: 60px;
+}
+
+body {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    overflow-y: auto;
+    flex-grow: 3;
+    flex-shrink: 1;
+  }
+
+/* Header */
+
+.header {
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    width: 100%;
+    
+}
+
+.header img {
+    float: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    height: 50px;
+}
+
+.nav a {
+    float: right;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+
+/* Main */
+
+.container-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
+} 
+/* Mission  */
+
+.text-block {
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Featured  */
+
+.section-two {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading{
+    padding: 30px;
+}
+
+.images {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap; 
+   
+}
+img.image {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 10px;
+  
+}
+
+/* Locations */
+.section-three {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/img-locations-background.jpeg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-position: center;
+}
+.locations {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background: none;
+    height: 500px;
+    width: 100%;
+}
+
+.location {
+    height: 300px;
+    width: 300px;
+    opacity: 1;
+}
+
+.section-three h2 {
+    justify-content: center;
+    background: none;
+    gap: 15px;
+}
+
+/* Footer */
+
+
+.contact {
+    text-align: center;
+    height: 200px;
+}
+
+.copyright {
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 20px;  
 }
